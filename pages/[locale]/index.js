@@ -15,7 +15,7 @@ import CompanyLogo from '~/components/CompanyLogo';
 import Counter from '~/components/Counter';
 import Feature from '~/components/Feature';
 import Testimonials from '~/components/Testimonials';
-import PricingPlan from '~/components/PricingPlan';
+// import PricingPlan from '~/components/PricingPlan';
 import Faq from '~/components/Faq';
 import NewsEvent from '~/components/NewsEvent';
 import FooterWithDeco from '~/components/Footer/FooterWithDeco';
@@ -95,9 +95,9 @@ function Landing(props) {
           <section id="testimonials" className={classes.spaceBottomTesti}>
             <Testimonials />
           </section>
-          <section id="pricing" className={classes.spaceTop}>
+          {/* <section id="pricing" className={classes.spaceTop}>
             <PricingPlan />
-          </section>
+          </section> */}
           <section id="faq" className={classes.spaceTopShort}>
             <Faq />
           </section>
