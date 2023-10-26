@@ -143,9 +143,11 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
       display: 'block',
       [theme.breakpoints.up('md')]: {
         maxWidth: 400,
+        transform: 'skewX(-6deg)',
       },
       [theme.breakpoints.up('lg')]: {
         maxWidth: 480,
+        transform: 'skewX(-8deg)',
       }
     }
   },
