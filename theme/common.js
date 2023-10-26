@@ -53,15 +53,15 @@ export const useText = makeStyles({ uniqId: 'text' })(theme => ({
   },
   subtitle: {
     fontWeight: theme.typography.fontWeightMedium,
-    fontSize: 28,
-    lineHeight: '44px',
+    fontSize: 20,
+    lineHeight: '36px',
     [theme.breakpoints.down('lg')]: {
-      fontSize: 24,
-      lineHeight: '36px',
+      fontSize: 18,
+      lineHeight: '30px',
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: 18,
-      lineHeight: '28px',
+      fontSize: 16,
+      lineHeight: '24px',
     },
   },
   subtitle2: {
