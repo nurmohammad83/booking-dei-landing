@@ -85,7 +85,7 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
       color: theme.palette.common.white,
       margin: theme.spacing(4, 0),
       [theme.breakpoints.up('lg')]: {
-        paddingRight: theme.spacing(15),
+        paddingRight: theme.spacing(10),
       }
     }
   },
