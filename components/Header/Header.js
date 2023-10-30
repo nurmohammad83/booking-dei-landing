@@ -10,8 +10,7 @@ import { useTheme } from '@mui/material/styles';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import { useTranslation } from 'next-i18next';
-import logo from '~/public/images/saas-logo.svg';
-import brand from '~/public/text/brand';
+import logo from '~/public/images/logo.svg';
 import link from '~/public/text/link';
 import Settings from './Settings';
 import MobileMenu from './MobileMenu';
@@ -106,12 +105,10 @@ function Header(props) {
                 {invert ? (
                   <Link href={curLang + link.saas.home}>
                     <img src={logo} alt="logo" />
-                    {!isTablet && brand.saas.name}
                   </Link>
                 ) : (
                   <AnchorLink href="#home">
                     <img src={logo} alt="logo" />
-                    {!isTablet && brand.saas.name}
                   </AnchorLink>
                 )}
               </div>
