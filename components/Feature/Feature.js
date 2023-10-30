@@ -43,29 +43,14 @@ function Feature() {
       </div>
       <Container fixed={isDesktop}>
         <ParallaxProvider>
+          {/* Feature one */}
           <div className={classes.item}>
             <Grid container direction={isMobile ? 'column-reverse' : 'row'}>
               <Grid item md={6} xs={12}>
                 <div className={classes.illustrationLeft}>
-                  <Parallax
-                    translateY={isMobile ? [10, 10] : [10, -25]}
-                    className="section"
-                  >
-                    <figure className={cx(classes.figure, classes.screen)}>
-                      <img src={imgAPI.saas[0]} alt="screen" />
-                    </figure>
-                  </Parallax>
-                  {!isMobile && (
-                    <Parallax
-                      translateY={isMobile ? [0, 0] : [-10, 20]}
-                      className="section"
-                    >
-                      <figure className={cx(classes.figure, classes.graphic)}>
-                        <img src={imgAPI.saas[1]} alt="illustration" />
-                      </figure>
-                    </Parallax>
-                  )}
-                  <ParallaxMedium />
+                  <figure className={cx(classes.figure, classes.screen)}>
+                    <img src={imgAPI.saas[8]} alt="screen" />
+                  </figure>
                 </div>
               </Grid>
               <Grid item md={6} xs={12}>
@@ -87,14 +72,12 @@ function Feature() {
                     <Typography display="block" component="h6" className={text.subtitle2} align={isMobile ? 'center' : 'left'}>
                       {t('saas-landing.feature_desc1')}
                     </Typography>
-                    <Button variant="contained" color="primary" size="large" className={classes.btn}>
-                      {t('saas-landing.see_detail')}
-                    </Button>
                   </div>
                 </ScrollAnimation>
               </Grid>
             </Grid>
           </div>
+          {/* Feature two */}
           <div className={classes.item}>
             <Grid container>
               <Grid item md={6} xs={12}>
@@ -149,6 +132,7 @@ function Feature() {
               </Grid>
             </Grid>
           </div>
+          {/* Feature three */}
           <div className={cx(classes.item, classes.last)}>
             <Title align="center">
               {t('saas-landing.feature_title3')}

@@ -54,14 +54,8 @@ const featureStyles = makeStyles({ uniqId: 'feature' })((theme, _params, classes
       },
     },
     [`& .${classes.figure}`]: {
-      transformStyle: 'preserve-3d',
       overflow: 'hidden',
-      boxShadow: theme.shadows[2],
-      borderRadius: theme.rounded.medium,
-      background: theme.palette.common.white,
-      padding: theme.spacing(1),
-      paddingTop: theme.spacing(3),
-      margin: theme.spacing(3),
+      paddingTop: theme.spacing(1),
       '& img': {
         width: '100%',
       },
