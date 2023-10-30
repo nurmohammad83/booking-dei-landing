@@ -13,8 +13,8 @@ const featureStyles = makeStyles({ uniqId: 'feature' })((theme, _params, classes
     '& svg': {
       width: '100%',
       height: 1700,
-      fill: theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,
-      opacity: 0.2,
+      fill: theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main,
+      opacity: 0.1,
       transform: 'scale(1.3)',
       [theme.breakpoints.up(1400)]: {
         transform: 'scale(2.5, 1)',
@@ -102,15 +102,6 @@ const featureStyles = makeStyles({ uniqId: 'feature' })((theme, _params, classes
     [`& .${classes.screen}`]: {
       [theme.breakpoints.up('md')]: {
         marginTop: -50,
-        transform: 'rotateY( 30deg )'
-      }
-    },
-    [`& .${classes.graphic}`]: {
-      top: 100,
-      left: 70,
-      width: 360,
-      [theme.breakpoints.up('md')]: {
-        transform: 'rotateY( 30deg ) rotateX(-5deg) rotateZ(-2deg)'
       }
     },
   },
@@ -120,16 +111,6 @@ const featureStyles = makeStyles({ uniqId: 'feature' })((theme, _params, classes
       [theme.breakpoints.up('md')]: {
         left: 10,
         top: -80,
-        transform: 'rotateY( -30deg )',
-      }
-    },
-    [`& .${classes.graphic}`]: {
-      right: -60,
-      top: 100,
-      width: 400,
-      [theme.breakpoints.up('md')]: {
-        transformStyle: 'preserve-3d',
-        transform: 'rotateY( -30deg ) rotateX(-4deg) rotateZ(0deg)',
       }
     },
   },
@@ -141,11 +122,6 @@ const featureStyles = makeStyles({ uniqId: 'feature' })((theme, _params, classes
       marginTop: -50,
       maxWidth: 700,
       margin: '0 auto !important',
-      transform: 'rotateY( 0 ) rotateX(35deg) rotateZ(0deg)',
-      '& img': {
-        margin: '0 auto',
-        width: '100%'
-      }
     },
   },
 }));

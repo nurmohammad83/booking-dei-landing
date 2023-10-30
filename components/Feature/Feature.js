@@ -11,7 +11,6 @@ import Tab from '@mui/material/Tab';
 import { useTranslation } from 'next-i18next';
 import { useText } from '~/theme/common';
 import imgAPI from '~/public/images/imgAPI';
-import ParallaxLarge from '../Parallax/Large';
 import Title from '../Title';
 import useStyles from './feature-style';
 
@@ -128,9 +127,9 @@ function Feature() {
                     textColor="primary"
                     centered
                   >
-                    <Tab classes={{ root: classes.tabLabel, selected: classes.selected }} label="Pellentesque" />
-                    <Tab classes={{ root: classes.tabLabel, selected: classes.selected }} label="Donec" />
-                    <Tab classes={{ root: classes.tabLabel, selected: classes.selected }} label="Vestibulum" />
+                    <Tab classes={{ root: classes.tabLabel, selected: classes.selected }} label="Room Bookings" />
+                    <Tab classes={{ root: classes.tabLabel, selected: classes.selected }} label="Transactions" />
+                    <Tab classes={{ root: classes.tabLabel, selected: classes.selected }} label="Financial Insights" />
                   </Tabs>
                   <div className={classes.tabContent}>
                     {value === 0 && (
@@ -138,9 +137,9 @@ function Feature() {
                         <Typography component="h6" display="block" align="center" className={text.subtitle2}>
                           {t('saas-landing.feature_desc3')}
                         </Typography>
-                        <div className={classes.illustrationCenter}>
+                        <div>
                           <figure className={cx(classes.figure, classes.screen)}>
-                            <img src={imgAPI.saas[4]} alt="screen" />
+                            <img src={imgAPI.saas[10]} alt="screen" />
                           </figure>
                         </div>
                       </section>
@@ -150,9 +149,9 @@ function Feature() {
                         <Typography component="h6" display="block" align="center" className={text.subtitle2}>
                           {t('saas-landing.feature_desc3')}
                         </Typography>
-                        <div className={classes.illustrationCenter}>
+                        <div>
                           <figure className={cx(classes.figure, classes.screen)}>
-                            <img src={imgAPI.saas[5]} alt="screen" />
+                            <img src={imgAPI.saas[10]} alt="screen" />
                           </figure>
                         </div>
                       </section>
@@ -162,14 +161,13 @@ function Feature() {
                         <Typography component="h6" display="block" align="center" className={text.subtitle2}>
                           {t('saas-landing.feature_desc3')}
                         </Typography>
-                        <div className={classes.illustrationCenter}>
+                        <div>
                           <figure className={cx(classes.figure, classes.screen)}>
-                            <img src={imgAPI.saas[6]} alt="screen" />
+                            <img src={imgAPI.saas[10]} alt="screen" />
                           </figure>
                         </div>
                       </section>
                     )}
-                    <ParallaxLarge />
                   </div>
                 </Grid>
               </Grid>
