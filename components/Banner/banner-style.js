@@ -19,7 +19,7 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
     }
   },
   root: {
-    background: `linear-gradient(-45deg, ${theme.palette.primary.main} 20%, ${theme.palette.primary.dark} 70%)`,
+    background: `linear-gradient(-45deg, ${theme.palette.primary.main} 20%, ${theme.palette.primary.main} 70%)`,
     position: 'relative',
     padding: theme.spacing(25, 0, 15),
     [theme.breakpoints.up('lg')]: {

@@ -55,7 +55,9 @@ const featureStyles = makeStyles({ uniqId: 'feature' })((theme, _params, classes
     },
     [`& .${classes.figure}`]: {
       overflow: 'hidden',
-      paddingTop: theme.spacing(1),
+      padding: theme.spacing(1),
+      paddingTop: theme.spacing(3),
+      margin: theme.spacing(3),
       '& img': {
         width: '100%',
       },
@@ -116,8 +118,8 @@ const featureStyles = makeStyles({ uniqId: 'feature' })((theme, _params, classes
     position: 'relative',
     [`& .${classes.screen}`]: {
       [theme.breakpoints.up('md')]: {
-        left: 20,
-        top: -40,
+        left: 10,
+        top: -80,
         transform: 'rotateY( -30deg )',
       }
     },

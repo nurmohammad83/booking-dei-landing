@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import Container from '@mui/material/Container';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
@@ -11,7 +11,6 @@ import Tab from '@mui/material/Tab';
 import { useTranslation } from 'next-i18next';
 import { useText } from '~/theme/common';
 import imgAPI from '~/public/images/imgAPI';
-import ParallaxMedium from '../Parallax/Medium';
 import ParallaxLarge from '../Parallax/Large';
 import Title from '../Title';
 import useStyles from './feature-style';
@@ -102,25 +101,9 @@ function Feature() {
               </Grid>
               <Grid item md={6} xs={12}>
                 <div className={classes.illustrationRight}>
-                  <Parallax
-                    translateY={isMobile ? [10, 10] : [10, -25]}
-                    className="section"
-                  >
-                    <figure className={cx(classes.figure, classes.screen)}>
-                      <img src={imgAPI.saas[2]} alt="screen" />
-                    </figure>
-                  </Parallax>
-                  {!isMobile && (
-                    <Parallax
-                      translateY={isMobile ? [-25, -25] : [-25, 25]}
-                      className="section"
-                    >
-                      <figure className={classes.graphic}>
-                        <img src={imgAPI.saas[3]} alt="illustration" />
-                      </figure>
-                    </Parallax>
-                  )}
-                  <ParallaxMedium />
+                  <figure className={cx(classes.figure, classes.screen)}>
+                    <img src={imgAPI.saas[8]} alt="screen" />
+                  </figure>
                 </div>
               </Grid>
             </Grid>
