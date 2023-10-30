@@ -4,13 +4,12 @@ import Container from '@mui/material/Container';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import ScrollAnimation from 'react-scroll-animation-wrapper';
 import Grid from '@mui/material/Grid';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { useTranslation } from 'next-i18next';
-import { useTextAlign, useText } from '~/theme/common';
+import { useText } from '~/theme/common';
 import imgAPI from '~/public/images/imgAPI';
 import ParallaxMedium from '../Parallax/Medium';
 import ParallaxLarge from '../Parallax/Large';
@@ -20,7 +19,6 @@ import useStyles from './feature-style';
 function Feature() {
   const { classes, cx } = useStyles();
   const { classes: text } = useText();
-  const { classes: align } = useTextAlign();
   const theme = useTheme();
 
   const [value, setValue] = useState(0);
@@ -90,7 +88,7 @@ function Feature() {
                 >
                   <div>
                     <Title align={isMobile ? 'center' : 'right'}>
-                      {t('saas-landing.feature_title1')}
+                      {t('saas-landing.feature_title2')}
                       &nbsp;
                       <strong>
                         {t('saas-landing.feature_titlestrong2')}
@@ -99,11 +97,6 @@ function Feature() {
                     <Typography display="block" component="h6" className={text.subtitle2} align={isMobile ? 'center' : 'right'}>
                       {t('saas-landing.feature_desc2')}
                     </Typography>
-                    <div className={isMobile ? align.textCenter : align.textRight}>
-                      <Button variant="contained" color="primary" size="large" className={classes.btn}>
-                        {t('saas-landing.see_detail')}
-                      </Button>
-                    </div>
                   </div>
                 </ScrollAnimation>
               </Grid>
