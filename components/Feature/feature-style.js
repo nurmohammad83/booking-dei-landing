@@ -124,6 +124,9 @@ const featureStyles = makeStyles({ uniqId: 'feature' })((theme, _params, classes
       margin: '0 auto !important',
     },
   },
+  action: {
+    textAlign: 'center',
+  }
 }));
 
 // TODO jss-to-tss-react codemod: usages of this hook outside of this file will not be converted.

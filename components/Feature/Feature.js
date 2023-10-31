@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { useTranslation } from 'next-i18next';
+import { Button } from '@mui/material';
 import { useText } from '~/theme/common';
 import imgAPI from '~/public/images/imgAPI';
 import Title from '../Title';
@@ -142,6 +143,17 @@ function Feature() {
                             <img src={imgAPI.saas[10]} alt="screen" />
                           </figure>
                         </div>
+                        <div className={classes.action}>
+                          <Button
+                            variant="contained"
+                            color="secondary"
+                            size="large"
+                            href="/"
+                          >
+                            {t('saas-landing.learn_more')}
+                          </Button>
+                        </div>
+
                       </section>
                     )}
                     {value === 1 && (
@@ -154,6 +166,16 @@ function Feature() {
                             <img src={imgAPI.saas[10]} alt="screen" />
                           </figure>
                         </div>
+                        <div className={classes.action}>
+                          <Button
+                            variant="contained"
+                            color="secondary"
+                            size="large"
+                            href="/"
+                          >
+                            {t('saas-landing.learn_more')}
+                          </Button>
+                        </div>
                       </section>
                     )}
                     {value === 2 && (
@@ -165,6 +187,16 @@ function Feature() {
                           <figure className={cx(classes.figure, classes.screen)}>
                             <img src={imgAPI.saas[10]} alt="screen" />
                           </figure>
+                        </div>
+                        <div className={classes.action}>
+                          <Button
+                            variant="contained"
+                            color="secondary"
+                            size="large"
+                            href="/"
+                          >
+                            {t('saas-landing.learn_more')}
+                          </Button>
                         </div>
                       </section>
                     )}
