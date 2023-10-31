@@ -117,7 +117,7 @@ const appTheme = (color, mode) => ({
     MuiButton: {
       styleOverrides: {
         containedSecondary: {
-          color: '#FFFFFF',
+          color: '#000000',
         },
         contained: {
           boxShadow: 'none',

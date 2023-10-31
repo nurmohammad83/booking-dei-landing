@@ -146,7 +146,7 @@ function Banner() {
               </ButtonBase>
               <Button
                 variant="contained"
-                color="inherit"
+                color="secondary"
                 size="large"
                 href="/login"
               >

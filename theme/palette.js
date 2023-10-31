@@ -106,8 +106,8 @@ module.exports = {
       },
       secondary: {
         light: '#BCBDBF',
-        main: '#8BC34A',
-        dark: '#558B2F',
+        main: '#FFFFFF',
+        dark: '#EFEFEF',
       }
     }
   },

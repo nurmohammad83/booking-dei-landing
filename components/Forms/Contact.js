@@ -200,7 +200,7 @@ function Contact() {
                       </span>
                     )}
                   />
-                  <Button variant="contained" className={classes.whiteBtn} fullWidth={isMobile} type="submit" color="inherit" size="large">
+                  <Button variant="contained" fullWidth={isMobile} type="submit" color="secondary" size="large">
                     {t('form_send')}
                   </Button>
                 </div>

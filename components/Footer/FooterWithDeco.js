@@ -27,7 +27,7 @@ function FooterWithDeco(props) {
         <Typography variant="h4" className={text.title2}>
           {t('saas-landing.footer_waiting')}
         </Typography>
-        <Button variant="contained" color="inherit" size="large">
+        <Button variant="contained" color="secondary" size="large">
           {t('saas-landing.getstarted')}
         </Button>
       </div>

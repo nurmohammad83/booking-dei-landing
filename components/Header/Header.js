@@ -146,7 +146,7 @@ function Header(props) {
                   <Button href={curLang + link.saas.login} className={classes.textBtn}>
                     {t('saas-landing.header_login')}
                   </Button>
-                  <Button href={curLang + link.saas.register} variant="contained" style={{ color: 'black' }} color="inherit" className={classes.button}>
+                  <Button href={curLang + link.saas.register} variant="contained" style={{ color: 'black' }} color="secondary" className={classes.button}>
                     {t('saas-landing.header_register')}
                   </Button>
                 </Fragment>

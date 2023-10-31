@@ -387,13 +387,6 @@ const contactStyles = makeStyles({ uniqId: 'form' })((theme, _params, classes) =
       background: darken('#28aae1', 0.2),
     }
   },
-  whiteBtn: {
-    background: '#ffffff',
-    color: 'black',
-    '&:hover': {
-      background: darken('#28aae1', 0.2),
-    }
-  },
   naviBtn: {
     background: '#3b579d',
     '&:hover': {
