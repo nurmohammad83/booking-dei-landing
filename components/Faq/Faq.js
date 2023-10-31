@@ -10,7 +10,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typography from '@mui/material/Typography';
 import { useTranslation } from 'next-i18next';
 import { useText } from '~/theme/common';
-import ParallaxMedium from '../Parallax/Medium';
 import illustration from '~/public/images/saas/faq.png';
 import Title from '../Title';
 import useStyles from './faq-style';
@@ -64,7 +63,6 @@ function Faq() {
             </Typography>
             {!isMobile && (
               <div className={classes.illustration}>
-                <ParallaxMedium />
                 <img src={illustration} alt="illustration" />
               </div>
             )}
