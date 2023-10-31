@@ -108,7 +108,7 @@ function Login() {
                 <Checkbox
                   checked={check}
                   onChange={(e) => handleCheck(e)}
-                  color="secondary"
+                  color="primary"
                   value={check}
                   className={classes.check}
                 />
@@ -124,7 +124,7 @@ function Login() {
             </Button>
           </div>
           <div className={classes.btnArea}>
-            <Button variant="contained" fullWidth type="submit" color="secondary" size="large">
+            <Button variant="contained" fullWidth type="submit" color="primary" size="large">
               {t('continue')}
             </Button>
           </div>

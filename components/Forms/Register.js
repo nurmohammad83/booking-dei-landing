@@ -148,7 +148,7 @@ function Register() {
                 </span>
               )}
             />
-            <Button variant="contained" type="submit" color="secondary" size="large">
+            <Button variant="contained" type="submit" color="primary" size="large">
               {t('continue')}
             </Button>
           </div>

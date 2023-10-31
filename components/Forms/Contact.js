@@ -187,7 +187,7 @@ function Contact() {
                         checked={check}
                         value={check}
                         onChange={(e) => handleCheck(e)}
-                        color="secondary"
+                        color="default"
                       />
                     )}
                     label={(
@@ -200,7 +200,7 @@ function Contact() {
                       </span>
                     )}
                   />
-                  <Button variant="contained" fullWidth={isMobile} type="submit" color="secondary" size="large">
+                  <Button variant="contained" className={classes.whiteBtn} fullWidth={isMobile} type="submit" color="inherit" size="large">
                     {t('form_send')}
                   </Button>
                 </div>

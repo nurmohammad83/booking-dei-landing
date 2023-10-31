@@ -92,7 +92,7 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
   btnArea: {
     display: 'flex',
     [theme.breakpoints.down('md')]: {
-      justifyContent: 'center'
+      justifyContent: 'center',
     },
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column-reverse',
@@ -120,17 +120,17 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
       lineHeight: '47px',
       verticalAlign: 'middle',
       marginRight: theme.spacing(),
-      background: theme.palette.primary.main,
+      background: theme.palette.common.white,
     },
     '& i': {
-      color: theme.palette.common.white,
+      color: theme.palette.common.black,
       lineHeight: '22px',
       marginLeft: theme.spacing(0.5),
       fontSize: 24,
     },
     '&:hover': {
       [`& .${classes.icon}`]: {
-        background: lighten(theme.palette.primary.main, 0.3),
+        background: lighten(theme.palette.common.white, 0.1),
         paddingLeft: 6,
       },
     }

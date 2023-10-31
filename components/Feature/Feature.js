@@ -146,7 +146,7 @@ function Feature() {
                         <div className={classes.action}>
                           <Button
                             variant="contained"
-                            color="secondary"
+                            color="primary"
                             size="large"
                             href="/"
                           >
@@ -169,7 +169,7 @@ function Feature() {
                         <div className={classes.action}>
                           <Button
                             variant="contained"
-                            color="secondary"
+                            color="primary"
                             size="large"
                             href="/"
                           >
@@ -191,7 +191,7 @@ function Feature() {
                         <div className={classes.action}>
                           <Button
                             variant="contained"
-                            color="secondary"
+                            color="primary"
                             size="large"
                             href="/"
                           >

@@ -6,10 +6,10 @@ const pagenav = makeStyles({ uniqId: 'pagenav' })((theme, _params, classes) => (
     transform: 'scale(0.5)',
     transition: 'all 0.5s ease',
     opacity: 0,
-    background: theme.palette.primary.light,
+    background: theme.palette.primary.main,
     fontWeight: theme.typography.fontWeightBold,
     '& svg': {
-      fill: theme.palette.primary.dark,
+      fill: theme.palette.common.white,
       width: 40,
       height: 40
     },

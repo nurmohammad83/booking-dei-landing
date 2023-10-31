@@ -100,14 +100,14 @@ module.exports = {
   violeta: {
     palette: {
       primary: {
-        light: '#E1BEE7',
+        light: '#FFFFFF',
         main: '#0059AA',
-        dark: '#6A1B9A'
+        dark: '#034682'
       },
       secondary: {
-        light: '#0059AA',
+        light: '#BCBDBF',
         main: '#8BC34A',
-        dark: '#558B2F'
+        dark: '#558B2F',
       }
     }
   },

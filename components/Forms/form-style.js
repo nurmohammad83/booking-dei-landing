@@ -119,7 +119,11 @@ const contactStyles = makeStyles({ uniqId: 'form' })((theme, _params, classes) =
       alignItems: 'center',
     }
   },
-  flex: {},
+  flex: {
+    '& a': {
+      color: 'black'
+    }
+  },
   btnArea: {
     justifyContent: 'space-between',
     [theme.breakpoints.up('sm')]: {
@@ -146,7 +150,7 @@ const contactStyles = makeStyles({ uniqId: 'form' })((theme, _params, classes) =
     '& span': {
       '& a': {
         textDecoration: 'none !important',
-        color: theme.palette.secondary.main,
+        color: theme.palette.primary.main,
       }
     },
     [`&.${classes.flex}`]: {
@@ -249,7 +253,7 @@ const contactStyles = makeStyles({ uniqId: 'form' })((theme, _params, classes) =
   },
   check: {
     '& svg': {
-      fill: theme.palette.secondary.main
+      fill: theme.palette.primary.main
     }
   },
   decoration: {
@@ -379,6 +383,13 @@ const contactStyles = makeStyles({ uniqId: 'form' })((theme, _params, classes) =
   },
   blueBtn: {
     background: '#28aae1',
+    '&:hover': {
+      background: darken('#28aae1', 0.2),
+    }
+  },
+  whiteBtn: {
+    background: '#ffffff',
+    color: 'black',
     '&:hover': {
       background: darken('#28aae1', 0.2),
     }

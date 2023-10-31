@@ -8,7 +8,7 @@ const notificationStyles = makeStyles({ uniqId: 'notif' })(theme => ({
     },
     '& > div': {
       width: '100%',
-      color: theme.palette.primary.dark,
+      color: theme.palette.common.black,
       background: theme.palette.primary.light,
       [theme.breakpoints.up('sm')]: {
         padding: theme.spacing(1, 4),

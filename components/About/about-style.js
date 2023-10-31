@@ -1,4 +1,5 @@
 import { makeStyles } from 'tss-react/mui';
+import { darken } from '@mui/material/styles';
 
 const aboutStyles = makeStyles({ uniqId: 'about' })((theme) => ({
   root: {
@@ -13,7 +14,7 @@ const aboutStyles = makeStyles({ uniqId: 'about' })((theme) => ({
     overflow: 'hidden',
     boxShadow: theme.shadows[2],
     borderRadius: theme.rounded.medium,
-    background: theme.palette.common.white,
+    background: theme.palette.mode === 'dark' ? darken('#303030', 0.1) : theme.palette.common.white,
     paddingRight: theme.spacing(17),
     paddingLeft: theme.spacing(17),
     paddingTop: theme.spacing(10),

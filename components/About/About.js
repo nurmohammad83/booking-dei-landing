@@ -23,7 +23,7 @@ function FooterWithDeco() {
         <div className={classes.action}>
           <Button
             variant="contained"
-            color="secondary"
+            color="primary"
             size="large"
             href="/"
           >

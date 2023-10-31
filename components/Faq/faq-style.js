@@ -25,6 +25,7 @@ const faqStyles = makeStyles({ uniqId: 'faq' })((theme, _params, classes) => ({
   paper: {
     borderRadius: `${theme.rounded.medium} !important`,
     overflow: 'hidden',
+    background: theme.palette.secondary.light,
   },
   heading: {
     fontWeight: theme.typography.fontWeightMedium,
@@ -42,7 +43,7 @@ const faqStyles = makeStyles({ uniqId: 'faq' })((theme, _params, classes) => ({
     }
   },
   expanded: {
-    background: theme.palette.secondary.main,
+    background: theme.palette.primary.main,
     [`& .${classes.heading}`]: {
       color: theme.palette.common.white,
       paddingTop: 0,
