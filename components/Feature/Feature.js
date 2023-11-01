@@ -136,7 +136,7 @@ function Feature() {
                     {value === 0 && (
                       <section>
                         <Typography component="h6" display="block" align="center" className={text.subtitle2}>
-                          {t('saas-landing.feature_desc3')}
+                          {t('saas-landing.feature_last_desc1')}
                         </Typography>
                         <div>
                           <figure className={cx(classes.figure, classes.screen)}>
@@ -159,7 +159,7 @@ function Feature() {
                     {value === 1 && (
                       <section>
                         <Typography component="h6" display="block" align="center" className={text.subtitle2}>
-                          {t('saas-landing.feature_desc3')}
+                          {t('saas-landing.feature_last_desc2')}
                         </Typography>
                         <div>
                           <figure className={cx(classes.figure, classes.screen)}>
@@ -181,7 +181,7 @@ function Feature() {
                     {value === 2 && (
                       <section>
                         <Typography component="h6" display="block" align="center" className={text.subtitle2}>
-                          {t('saas-landing.feature_desc3')}
+                          {t('saas-landing.feature_last_desc3')}
                         </Typography>
                         <div>
                           <figure className={cx(classes.figure, classes.screen)}>
