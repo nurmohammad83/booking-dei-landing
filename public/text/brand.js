@@ -1,9 +1,9 @@
 module.exports = {
   saas: {
-    name: 'Software',
+    name: 'Booking Dei',
     desc: 'Luxiren Saas - React Single Landing Page Template',
     prefix: 'luxiren',
-    footerText: 'Booking Dei 2023',
+    footerText: 'Booking Dei ',
     logoText: 'Luxiren Software',
     projectName: 'Software',
     url: 'luxireact.ux-maestro.com/saas',

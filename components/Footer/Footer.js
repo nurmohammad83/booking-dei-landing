@@ -17,10 +17,13 @@ import useStyles from './footer-style';
 import SelectLang from '../LangSwitch/Select';
 
 function Copyright() {
+  const date = new Date();
+  const establishYear = date.getFullYear();
   return (
     <Typography variant="body2" display="block" align="center" color="textSecondary">
       &copy;&nbsp;
       {brand.saas.footerText}
+      {establishYear}
     </Typography>
   );
 }
