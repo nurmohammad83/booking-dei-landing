@@ -1,3 +1,4 @@
+import { lighten } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 
 const faqStyles = makeStyles({ uniqId: 'faq' })((theme, _params, classes) => ({
@@ -25,7 +26,7 @@ const faqStyles = makeStyles({ uniqId: 'faq' })((theme, _params, classes) => ({
   paper: {
     borderRadius: `${theme.rounded.medium} !important`,
     overflow: 'hidden',
-    background: theme.palette.secondary.light,
+    background: theme.palette.mode === 'dark' ? '#303030' : lighten(theme.palette.secondary.light, 0.8),
   },
   heading: {
     fontWeight: theme.typography.fontWeightMedium,
@@ -65,7 +66,7 @@ const faqStyles = makeStyles({ uniqId: 'faq' })((theme, _params, classes) => ({
     }
   },
   icon: {
-    color: theme.palette.mode === 'dark' ? theme.palette.primary.light : theme.palette.primary.main
+    color: theme.palette.mode === 'dark' ? theme.palette.primary.light : theme.palette.common.black
   }
 }));
 

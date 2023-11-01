@@ -34,7 +34,7 @@ const faqData = [
   },
   {
     q: "How can I check KPIs and financial reports?",
-    a: "Stay tuned! Were currently working on brining you valuable financial insights and analytics, coming soon the feature. "
+    a: "Stay tuned! We're currently working on brining you valuable financial insights and analytics, coming soon the feature. "
   },
 ];
 
