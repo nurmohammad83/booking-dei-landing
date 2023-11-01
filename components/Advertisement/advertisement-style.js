@@ -1,7 +1,7 @@
 import { makeStyles } from 'tss-react/mui';
 import { darken } from '@mui/material/styles';
 
-const aboutStyles = makeStyles({ uniqId: 'about' })((theme) => ({
+const advertisementStyles = makeStyles({ uniqId: 'about' })((theme) => ({
   root: {
     position: 'relative',
     display: 'flex',
@@ -14,11 +14,18 @@ const aboutStyles = makeStyles({ uniqId: 'about' })((theme) => ({
     overflow: 'hidden',
     boxShadow: theme.shadows[2],
     borderRadius: theme.rounded.medium,
-    background: theme.palette.mode === 'dark' ? darken('#303030', 0.1) : theme.palette.common.white,
+    background: theme.palette.mode === 'dark' ? darken('#303030', 0.2) : theme.palette.common.white,
     paddingRight: theme.spacing(17),
     paddingLeft: theme.spacing(17),
     paddingTop: theme.spacing(10),
     paddingBottom: theme.spacing(10),
+    [theme.breakpoints.down('lg')]: {
+      boxShadow: 'none',
+      paddingRight: theme.spacing(2),
+      paddingLeft: theme.spacing(2),
+      paddingTop: theme.spacing(4),
+      paddingBottom: theme.spacing(4),
+    },
   },
 
   action: {
@@ -28,4 +35,4 @@ const aboutStyles = makeStyles({ uniqId: 'about' })((theme) => ({
 }));
 
 // TODO jss-to-tss-react codemod: usages of this hook outside of this file will not be converted.
-export default aboutStyles;
+export default advertisementStyles;

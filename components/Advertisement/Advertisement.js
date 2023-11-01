@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import { useTranslation } from 'next-i18next';
 import { useText } from '~/theme/common';
 import Title from '../Title';
-import useStyles from './about-style';
+import useStyles from './advertisement-style';
 
 function FooterWithDeco() {
   const { classes } = useStyles();
@@ -15,10 +15,10 @@ function FooterWithDeco() {
     <div className={classes.root}>
       <div className={classes.item}>
         <Title align="center">
-          {t('saas-landing.about_title')}
+          {t('saas-landing.advertisement_title')}
         </Title>
         <Typography display="block" component="h5" className={text.subtitle2} align="center">
-          {t('saas-landing.about_subtitle')}
+          {t('saas-landing.advertisement_subtitle')}
         </Typography>
         <div className={classes.action}>
           <Button
