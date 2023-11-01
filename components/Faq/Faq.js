@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import React, { useState } from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
@@ -16,24 +17,24 @@ import useStyles from './faq-style';
 
 const faqData = [
   {
-    q: 'How do I add a new guest or employee to the system?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
+    q: "How do I add a new guest or employee to the system?",
+    a: "For guests, as create a new booking, their details are automatically recoded in the guest look-up page. To add  a new employee to the system, simply click on the '+ New Employee' button and enter their  details in the pop-up. "
   },
   {
-    q: 'How can I add a transaction?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
+    q: "How can I add a transaction?",
+    a: "To add a income transaction, click '+ New Transaction' when creating or editing a booking. For expenses, use '+ New Expenses' on the Transactions page. One confirmed, the transactions are automatically stored in the Transactions page and can be edited and deleted as needed"
   },
   {
-    q: 'Can I edit a room booking?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
+    q: "Can I edit a room booking?",
+    a: "Absoulilty! you can edit any room booking by clicking the “Edit Booking” button on the booking details page. "
   },
   {
-    q: 'How do I check room availability?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
+    q: "How do I check room availability?",
+    a: "To check room availability, visit the Home page and view the the room layout grid. All rooms are color-coded by status, with available rooms marked in white, making it easy to check their availability. "
   },
   {
-    q: 'How can I check KPIs and financial reports?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
+    q: "How can I check KPIs and financial reports?",
+    a: "Stay tuned! Were currently working on brining you valuable financial insights and analytics, coming soon the feature. "
   },
 ];
 

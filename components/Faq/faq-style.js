@@ -6,7 +6,7 @@ const faqStyles = makeStyles({ uniqId: 'faq' })((theme, _params, classes) => ({
   },
   text: {
     position: 'relative',
-    zIndex: 20
+    zIndex: 15
   },
   illustration: {
     position: 'relative',
