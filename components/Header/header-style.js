@@ -229,7 +229,7 @@ const headerStyles = makeStyles({ uniqId: 'header' })((theme, _params, classes) 
           },
           '&:hover': {
             transition: 'all 0.3s ease-out',
-            opacity: 0.5,
+            opacity: 0.8,
             '&:after': {
               width: 20,
               background: theme.palette.common.white
