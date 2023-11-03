@@ -3,8 +3,8 @@ import { darken } from '@mui/material/styles';
 import flag from '~/public/images/flag-logo.png';
 
 const flagIcon = {
-  width: 14,
-  height: 14,
+  width: 16,
+  height: 16,
   borderRadius: '50%',
   display: 'inline-block',
   position: 'relative',
@@ -13,25 +13,25 @@ const flagIcon = {
   background: `url(${flag}) no-repeat transparent`,
   backgroundSize: '16px auto',
   '&[class="ar"]': {
-    backgroundPosition: '-1px 0px'
+    backgroundPosition: '0 0px'
   },
   '&[class="zh"]': {
-    backgroundPosition: '-1px -12px'
+    backgroundPosition: '0 -12px'
   },
   '&[class="en"]': {
-    backgroundPosition: '-1px -26px'
+    backgroundPosition: '0 -35px'
   },
   '&[class="bn"]': {
-    backgroundPosition: '-1px -81px'
+    backgroundPosition: '0 -92px'
   },
   '&[class="de"]': {
-    backgroundPosition: '-1px -40px'
+    backgroundPosition: '0 -40px'
   },
   '&[class="id"]': {
-    backgroundPosition: '-1px -55px'
+    backgroundPosition: '0 -55px'
   },
   '&[class="pt"]': {
-    backgroundPosition: '-1px -69px'
+    backgroundPosition: '0 -69px'
   },
 };
 
