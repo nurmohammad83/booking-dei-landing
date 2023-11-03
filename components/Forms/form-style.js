@@ -18,7 +18,7 @@ const contactStyles = makeStyles({ uniqId: 'form' })((theme, _params, classes) =
       padding: theme.spacing(5, 0)
     },
     [`& .${classes.title}`]: {
-      color: theme.palette.common.white,
+      color: theme.palette.mode === 'dark' ? theme.palette.common.white : theme.palette.common.black,
     },
     '& a': {
       color: theme.palette.mode === 'dark' ? theme.palette.primary.light : theme.palette.primary.main,
@@ -35,7 +35,7 @@ const contactStyles = makeStyles({ uniqId: 'form' })((theme, _params, classes) =
     textAlign: 'left',
   },
   fullFromWrap: {
-    color: theme.palette.common.white,
+    color: theme.palette.mode === 'dark' ? theme.palette.common.white : theme.palette.common.black,
     paddingTop: theme.spacing(8),
     [theme.breakpoints.down('sm')]: {
       paddingTop: theme.spacing(4)
@@ -44,14 +44,14 @@ const contactStyles = makeStyles({ uniqId: 'form' })((theme, _params, classes) =
   formBox: {
     borderRadius: 40,
     overflow: 'hidden',
-    background: 'transparent',
+    background: '',
     boxShadow: '0 1.5px 12px 2px rgba(0, 0, 0, 0.28)',
     [theme.breakpoints.down('sm')]: {
       boxShadow: 'none'
     }
   },
   desc: {
-    color: theme.palette.common.white,
+    color: theme.palette.mode === 'dark' ? theme.palette.common.white : theme.palette.common.black,
     textAlign: 'center',
     padding: theme.spacing(0, 10),
     [theme.breakpoints.down('sm')]: {
@@ -80,17 +80,17 @@ const contactStyles = makeStyles({ uniqId: 'form' })((theme, _params, classes) =
     },
     [`&.${classes.light}`]: {
       '& label': {
-        color: theme.palette.common.white,
+        color: theme.palette.mode === 'dark' ? theme.palette.common.white : theme.palette.common.black,
       },
       '& > div': {
-        border: `1px solid ${alpha(theme.palette.primary.light, 0.5)}`,
+        border: theme.palette.mode === 'dark' ? `1px solid ${alpha(theme.palette.primary.light, 0.5)}` : `1px solid ${alpha(theme.palette.common.black, 0.5)}`,
         '& input': {
-          color: theme.palette.common.white,
+          color: theme.palette.mode === 'dark' ? theme.palette.common.white : theme.palette.common.black,
           '&:focus': {
-            background: alpha(theme.palette.text.disabled, 0.2)
+            background: alpha(theme.palette.text.disabled, 0.1),
           },
           '&:hover': {
-            background: alpha(theme.palette.text.disabled, 0.2)
+            background: alpha(theme.palette.text.disabled, 0.1)
           }
         },
       }
@@ -229,7 +229,7 @@ const contactStyles = makeStyles({ uniqId: 'form' })((theme, _params, classes) =
     },
     '& i': {
       fontSize: 32,
-      color: alpha(theme.palette.common.white, 0.54)
+      color: theme.palette.mode === 'dark' ? alpha(theme.palette.common.white, 0.54) : alpha(theme.palette.common.black, 0.54)
     },
     '& > span i:first-of-type': {
       opacity: 1,
@@ -302,7 +302,7 @@ const contactStyles = makeStyles({ uniqId: 'form' })((theme, _params, classes) =
     justifyContent: 'flex-start',
     height: '100%',
     textAlign: 'center',
-    color: theme.palette.common.white,
+    color: theme.palette.mode === 'dark' ? theme.palette.common.white : theme.palette.common.black,
     '& h6': {
       fontWeight: theme.typography.fontWeightRegular
     }

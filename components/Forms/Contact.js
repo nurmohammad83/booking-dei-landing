@@ -178,7 +178,7 @@ function Contact() {
                     />
                   </Grid>
                 </Grid>
-                <div className={cx(classes.btnArea, classes.flex)}>
+                <div className={cx(classes.btnArea)}>
                   <FormControlLabel
                     control={(
                       <Checkbox
@@ -186,12 +186,13 @@ function Contact() {
                         errorMessages="This field is required"
                         checked={check}
                         value={check}
+                        className={classes.check}
                         onChange={(e) => handleCheck(e)}
                         color="default"
                       />
                     )}
                     label={(
-                      <span>
+                      <span className={text.caption}>
                         {t('form_terms')}
                         <br />
                         <a href="#">
@@ -200,7 +201,7 @@ function Contact() {
                       </span>
                     )}
                   />
-                  <Button variant="contained" fullWidth={isMobile} type="submit" color="secondary" size="large">
+                  <Button variant="contained" fullWidth={isMobile} type="submit" color="primary" size="large">
                     {t('form_send')}
                   </Button>
                 </div>

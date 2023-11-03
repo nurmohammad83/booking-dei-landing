@@ -79,7 +79,7 @@ function Login() {
             <Grid item xs={12}>
               <TextValidator
                 variant="filled"
-                className={classes.input}
+                className={cx(classes.input, classes.light)}
                 label={t('login_email')}
                 onChange={handleChange('email')}
                 name="email"
@@ -92,7 +92,7 @@ function Login() {
               <TextValidator
                 variant="filled"
                 type="password"
-                className={classes.input}
+                className={cx(classes.input, classes.light)}
                 label={t('login_password')}
                 validators={['required']}
                 onChange={handleChange('password')}

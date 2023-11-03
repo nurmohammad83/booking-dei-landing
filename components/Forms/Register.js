@@ -78,7 +78,7 @@ function Register() {
             <Grid item xs={12}>
               <TextValidator
                 variant="filled"
-                className={classes.input}
+                className={cx(classes.input, classes.light)}
                 label={t('register_name')}
                 onChange={handleChange('name')}
                 name="name"
@@ -90,7 +90,7 @@ function Register() {
             <Grid item xs={12}>
               <TextValidator
                 variant="filled"
-                className={classes.input}
+                className={cx(classes.input, classes.light)}
                 label={t('register_email')}
                 onChange={handleChange('email')}
                 name="email"
@@ -103,7 +103,7 @@ function Register() {
               <TextValidator
                 variant="filled"
                 type="password"
-                className={classes.input}
+                className={cx(classes.input, classes.light)}
                 label={t('register_password')}
                 validators={['required']}
                 onChange={handleChange('password')}
@@ -116,7 +116,7 @@ function Register() {
               <TextValidator
                 variant="filled"
                 type="password"
-                className={classes.input}
+                className={cx(classes.input, classes.light)}
                 label={t('register_confirm')}
                 validators={['isPasswordMatch', 'required']}
                 errorMessages={['Password mismatch', 'This field is required']}
@@ -141,6 +141,7 @@ function Register() {
               label={(
                 <span className={text.caption}>
                   {t('form_terms')}
+                  <br />
                   &nbsp;
                   <a href="#">
                     {t('form_privacy')}

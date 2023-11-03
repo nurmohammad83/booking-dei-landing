@@ -185,7 +185,7 @@ function Feature() {
                         </Typography>
                         <div>
                           <figure className={cx(classes.figure, classes.screen)}>
-                            <img src={imgAPI.saas[10]} alt="screen" />
+                            <img src={imgAPI.saas[11]} alt="screen" />
                           </figure>
                         </div>
                         <div className={classes.action}>
